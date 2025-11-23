@@ -1,4 +1,5 @@
 # React + Vite
+<a href="https://sami-sour.github.io/Resume-Maker/">View Live</a> to make you resume.
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
