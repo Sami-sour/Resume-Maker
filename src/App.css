@@ -1,0 +1,398 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Open Sans", sans-serif;
+}
+
+body {
+  background-color: rgb(206, 209, 211);
+}
+
+.resume-header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(126, 29, 165);
+  padding: 0.5rem;
+}
+
+.resume {
+  width: 9vmin;
+  margin-top: 0.5rem;
+}
+
+.heading {
+  font-size: 9vmin;
+  font-weight: 600;
+  margin-left: 0.5rem;
+  color: white;
+}
+
+.resume-outer-container {
+  display: flex;
+  justify-content: center;
+}
+
+.resume-section {
+  border-radius: 0.5rem;
+  width: 130vh;
+  box-shadow: black 3px 3px 12px 0px;
+  margin: 1.5rem 1rem;
+  padding: 0.7rem 1.5rem;
+  background-color: rgb(227, 226, 226);
+}
+
+.header-one,
+.header-two,
+.header-three,
+.header-four,
+.header-five {
+  font-size: 3.7vmin;
+  color: rgb(126, 29, 165);
+}
+
+.header-two,
+.header-three,
+.header-four,
+.header-five {
+  margin-top: 1rem;
+}
+
+.full-name-box,
+.skill-section {
+  margin-top: 0.8rem;
+}
+
+.title-box,
+.summary-box {
+  margin-top: 0.5rem;
+}
+
+/* 100% */
+.full-name,
+.title-name,
+.summary,
+.skills,
+.accomp,
+.technology,
+.descrip {
+  width: 100%;
+  resize: none;
+  padding: 0.2rem 0.4rem;
+  height: 2rem;
+  border-radius: 0.3rem;
+  margin-top: 0.2rem;
+  outline: none;
+  border: 1px solid rgb(185, 185, 185);
+  font-size: 0.9rem;
+}
+
+.summary,
+.accomp,
+.descrip {
+  height: 4rem;
+}
+
+.accomp-info,
+.description {
+  margin-top: 0.7rem;
+}
+
+.contact-info {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-top: 0.5rem;
+}
+
+/* display flex, width: 380px */
+.email,
+.phone,
+.linkedIn,
+.github,
+.position,
+.company,
+.city,
+.name,
+.link,
+.degree,
+.university,
+.from-period,
+.to-period {
+  width: 380px;
+
+  padding: 0.2rem 0.4rem;
+  height: 2rem;
+  border-radius: 0.3rem;
+  margin-top: 0.2rem;
+  outline: none;
+  border: 1px solid rgb(185, 185, 185);
+  font-size: 0.9rem;
+}
+
+.froms,
+.tos {
+  width: 186px;
+  padding: 0.2rem 0.4rem;
+  height: 2rem;
+  border-radius: 0.3rem;
+  margin-top: 0.2rem;
+  outline: none;
+  border: 1px solid rgb(185, 185, 185);
+  font-size: 0.9rem;
+}
+
+.social-info {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-top: 0.5rem;
+}
+
+.work-section,
+.work-time-period {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-top: 0.7rem;
+}
+
+.work-period {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.add-btn,
+.add-project,
+.edu-button {
+  width: 380px;
+  height: 2rem;
+  border: none;
+  background-color: rgb(126, 29, 165);
+  border-radius: 0.3rem;
+  color: white;
+  font-weight: 700;
+  margin-top: 0.5rem;
+}
+
+.education-button {
+  display: flex;
+  margin-top: 0.5rem;
+  gap: 0.5rem;
+}
+
+.delete-button,
+.delete-project,
+.education-delete {
+  width: 380px;
+  height: 2rem;
+  border: none;
+  background-color: red;
+  border-radius: 0.3rem;
+  color: white;
+  font-weight: 700;
+  margin-top: 0.5rem;
+}
+
+.button,
+.project-btn {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.6rem;
+}
+
+.project-box {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-top: 1rem;
+}
+
+.technology-box {
+  margin-top: 0.7rem;
+}
+
+.education-box,
+.edu-time-period {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-top: 0.7rem;
+}
+
+.preview-btn,
+.edit-btn {
+  display: flex;
+  justify-content: center;
+  margin-top: 1.5rem;
+}
+
+.output-btn,
+.edit {
+  width: 60vmin;
+  height: 2rem;
+  border-radius: 0.4rem;
+  border: none;
+  background-color: rgb(126, 29, 165);
+  color: white;
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+.person-name {
+  font-size: 2.1rem;
+  color: rgb(126, 29, 165);
+}
+
+.person-time-period-place {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 0.5rem;
+}
+
+.person-time-period,
+.person-work-place {
+  color: rgb(108, 106, 106);
+}
+
+.person-accomp {
+  margin-top: 0.5rem;
+}
+
+.person-skills {
+  font-size: 1.6rem;
+  margin-top: 1rem;
+  color: rgb(126, 29, 165);
+}
+
+.skills-info {
+  margin-top: 0.3rem;
+}
+
+.person-company {
+  margin-top: 0.2rem;
+  font-size: 1.1rem;
+}
+
+.person-project-name,
+.education-name {
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin-top: 0.5rem;
+}
+
+.person-project-descrp {
+  margin-top: 0.5rem;
+}
+
+.education-place {
+  margin-top: 0.5rem;
+}
+
+.education-time-period {
+  margin-top: 0.5rem;
+  color: rgb(108, 106, 106);
+}
+
+.person-project-work {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 0.5rem;
+  color: rgb(108, 106, 106);
+}
+
+.project-header,
+.education-header {
+  margin-top: 1rem;
+  font-size: 1.6rem;
+  color: rgb(126, 29, 165);
+}
+
+.person-work,
+.person-experience {
+  font-size: 1.6rem;
+  margin-top: 1rem;
+}
+
+.person-experience {
+  color: rgb(126, 29, 165);
+}
+
+.person-summary {
+  margin-top: 0.5rem;
+}
+
+hr {
+  margin-top: 0.6rem;
+  height: 0.12rem;
+  background-color: black;
+}
+
+.personal-info {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 0.6rem;
+}
+
+.email-address,
+.phone-contact,
+.linkedIn-address,
+.github-address {
+  display: flex;
+}
+
+.email-icon,
+.phone-information,
+.linkedIn-icon,
+.github-icon {
+  color: rgb(126, 29, 165);
+  margin-top: 0.2rem;
+  margin-right: 0.3rem;
+}
+
+.person-position {
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin-top: 0.5rem;
+}
+
+@media (min-width: 300px) and (max-width: 550px) {
+  .email,
+  .phone,
+  .linkedIn,
+  .github,
+  .position,
+  .company,
+  .city,
+  .name,
+  .link,
+  .degree,
+  .university,
+  .from-period,
+  .to-period {
+    width: 302px;
+  }
+
+  .add-btn,
+  .add-project,
+  .edu-button {
+    width: 296px;
+  }
+
+  .delete-button,
+  .delete-project,
+  .education-delete {
+    width: 296px;
+  }
+
+  .froms,
+  .tos {
+    width: 147px;
+  }
+}
