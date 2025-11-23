@@ -245,6 +245,7 @@ body {
 .output-btn {
   background-color: rgb(126, 29, 165);
   color: white;
+  cursor: pointer;
 }
 
 .edit {

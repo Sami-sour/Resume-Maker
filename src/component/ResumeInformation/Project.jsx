@@ -48,7 +48,6 @@ const Project = () => {
   return (
     <>
       <h1 className="header-four">Project</h1>
-
       {project.map((pro, index) => (
         <div className="project-section" key={pro.id}>
           <div className="project-box">

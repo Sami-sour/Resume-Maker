@@ -1,20 +1,22 @@
-import React, { useState } from "react";
+import React, { useMemo, useState } from "react";
 import { MdEmail } from "react-icons/md";
 import { FaPhone } from "react-icons/fa6";
 import { FaLinkedin } from "react-icons/fa6";
 import { FaGithub } from "react-icons/fa6";
 
 const PersonalInfoOutput = () => {
-  const [personalInformation] = useState(() => {
-    return JSON.parse(localStorage.getItem("personalInformation")) || [];
-  });
+  // const [personalInformation] = useState(() => {
+  //   return JSON.parse(localStorage.getItem("personalInformation")) || [];
+  // });
+
+  const personalInformation =
+    JSON.parse(localStorage.getItem("personalInformation")) || [];
 
   return (
     <>
-      {" "}
       <h1 className="person-name">{personalInformation?.personName}</h1>
       <p className="person-work">{personalInformation?.personJobTitle}</p>
-      <p className="person-summary">{personalInformation?.summary}</p>
+      <p className="person-summary">{personalInformation?.personSummary}</p>
       <hr />
       <div className="personal-info">
         <div className="email-address">
@@ -34,7 +36,6 @@ const PersonalInfoOutput = () => {
 
         <div className="linkedIn-address">
           <div className="linkedIn-icon">
-            {" "}
             <FaLinkedin />
           </div>
           <div className="person-linkedIn">

@@ -4,7 +4,6 @@ import "./App.css";
 import Header from "./component/Header";
 import PreviewBtn from "./component/PreviewBtn";
 
-import EditBtn from "./component/EditBtn";
 import ResumeInfo from "./component/ResumeInfo";
 import ResumePreview from "./component/ResumePreview";
 
@@ -12,27 +11,24 @@ function App() {
   const [tab, setTab] = useState(false);
 
   const handleOnPreviewBtn = () => {
-    setTab(true);
+    setTab((prev) => !prev);
   };
 
-  const handleOnEditBtnClicked = () => {
-    setTab(false);
-  };
+  // const handleOnEditBtnClicked = () => {
+  //   setTab(false);
+  // };
 
   return (
     <>
       <Header />
-      {!tab && <PreviewBtn handleOnPreviewBtn={handleOnPreviewBtn} />}
-      {tab && <EditBtn handleOnEditBtnClicked={handleOnEditBtnClicked} />}
+      <PreviewBtn tab={tab} handleOnPreviewBtn={handleOnPreviewBtn} />
       <div className="resume-outer-container">
         <div className="resume-section">
-          {!tab && (
+          {!tab ? (
             <div className="all-input-info">
               <ResumeInfo />
             </div>
-          )}
-
-          {tab && (
+          ) : (
             <div className="all-input-output">
               <ResumePreview />
             </div>

@@ -1,15 +1,12 @@
 import React from "react";
 
-const PreviewBtn = ({ handleOnPreviewBtn }) => {
+const PreviewBtn = ({ tab, handleOnPreviewBtn }) => {
   return (
-    <>
-      {" "}
-      <div className="preview-btn">
-        <button className="output-btn" onClick={handleOnPreviewBtn}>
-          Preview
-        </button>
-      </div>
-    </>
+    <div className="preview-btn">
+      <button className="output-btn" onClick={handleOnPreviewBtn}>
+        {tab ? "Edit" : "Preview"}
+      </button>
+    </div>
   );
 };
 

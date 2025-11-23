@@ -65,7 +65,6 @@ const WorkExperience = () => {
 
   return (
     <>
-      {" "}
       <h1 className="header-three">WorkExperience</h1>
       {experience.map((exp, index) => (
         <div className="work-section-box" key={exp.id}>

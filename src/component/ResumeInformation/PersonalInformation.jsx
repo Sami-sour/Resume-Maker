@@ -27,7 +27,6 @@ const PersonalInformation = () => {
 
   return (
     <>
-      {" "}
       <h1 className="header-one">Personal Information</h1>
       <form action="">
         <div className="full-name-box">

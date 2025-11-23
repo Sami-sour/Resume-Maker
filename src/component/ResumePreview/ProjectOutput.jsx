@@ -7,7 +7,6 @@ export const ProjectOutput = () => {
 
   return (
     <>
-      {" "}
       <h2 className="project-header">Project Output</h2>
       {personProject?.map((pro) => (
         <div className="person-project" key={pro.id}>
